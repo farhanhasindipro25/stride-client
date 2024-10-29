@@ -56,6 +56,3 @@ export default function CategoryWithTasks() {
         </div>
     );
 }
-
-// title: 'Hello There. Welcome to Stride!',
-// description: 'Get started right away by editing this task.',
