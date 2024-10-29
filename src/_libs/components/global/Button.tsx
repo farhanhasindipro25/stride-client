@@ -6,6 +6,7 @@ import {
     SMALL_BUTTON_STYLES,
 } from "@/_libs/styles/ButtonStyles";
 import cn from "@/_libs/utils/cn";
+import { montserrat } from "@/_libs/utils/font";
 import { cva } from "class-variance-authority";
 import React from "react";
 
@@ -37,7 +38,8 @@ export default function Button({
     const BUTTON_STYLES = cn(
         BUTTON_VARIANTS({ variant, size }),
         className ?? "",
-        isLoading ? "cursor-wait" : ""
+        isLoading ? "cursor-wait" : "",
+        montserrat.className
     );
 
     return (

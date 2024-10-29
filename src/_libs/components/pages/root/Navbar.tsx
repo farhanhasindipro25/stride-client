@@ -5,7 +5,7 @@ import React from "react";
 export default function Navbar() {
     return (
         <div className="w-full bg-slate-800/10 backdrop-blur-xl py-4">
-            <div className="max-w-7xl space-y-2 mx-auto px-4">
+            <div className="max-w-9xl space-y-2 mx-auto flex justify-between px-4">
                 <h2
                     className={cn(
                         "font-semibold text-sm text-gray-400 text-center",
