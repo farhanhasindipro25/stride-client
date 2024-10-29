@@ -10,7 +10,7 @@ export default function Home() {
             <div className="max-w-9xl mx-auto px-4">
                 <div className="overflow-x-auto">
                     <div className="flex space-x-4 py-4">
-                        {Array.from({ length: 5 }, (_, index) => (
+                        {Array.from({ length: 1 }, (_, index) => (
                             <div
                                 key={index}
                                 className="min-w-[20rem] flex-shrink-0"

@@ -16,7 +16,7 @@ export default function CategoryWithTasks() {
             </div>
 
             <div className="border space-y-4 divide-y divide-slate-800/50 cursor-pointer border-slate-800/25 bg-slate-700/10 rounded-md p-3">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between">
                     <div className="flex items-center gap-2">
                         <ClockIcon className="w-4 h-4 text-gray-300" />
                         <p className="font-medium text-xs text-gray-300">
