@@ -4,7 +4,7 @@ export const PriorityLevelOptions = [
     value: "URGENT"
   },
   {
-    label:"High Priority",
+    label:"High",
     value: "HIGH_PRIORITY"
   },
   {
