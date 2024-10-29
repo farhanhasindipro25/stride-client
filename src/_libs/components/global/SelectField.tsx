@@ -11,6 +11,7 @@ export default function SelectField(props: SelectFieldProps) {
         label = "",
         name,
         id = "",
+        instanceId,
         defaultValue,
         options,
         onChange,
@@ -46,6 +47,7 @@ export default function SelectField(props: SelectFieldProps) {
                 inputId={id}
                 value={value}
                 styles={customStyles}
+                instanceId={instanceId}
                 classNamePrefix="select2-selection"
                 placeholder={placeholder}
                 options={options}

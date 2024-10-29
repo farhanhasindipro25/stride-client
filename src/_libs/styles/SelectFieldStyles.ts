@@ -5,57 +5,61 @@ export const SELECT_LABEL_STYLES =
 export const customStyles = {
   control: (provided: any, state: any) => ({
     ...provided,
-    borderColor: state.isFocused ? "rgb(124, 58, 237)" : provided.borderColor,
+    borderColor: state.isFocused ? "#1e293b" : "#0f172a",
     boxShadow: state.isFocused
-      ? "0 0 0 2px rgb(124, 58, 237)"
+      ? "0 0 0 2px #1e293b"
       : provided.boxShadow,
     border: state.isFocused ? "none" : provided.border,
-    paddingTop: "3px",
-    paddingBottom: "5px",
+    minHeight: "40px",
+    fontSize: "12px",
+    backgroundColor: "#020617",
+    color:"#020617"
   }),
 
   option: (provided: any, state: any) => ({
     ...provided,
     backgroundColor:
       (state.isFocused || state.isSelected) && !state.isMulti
-        ? "rgb(124, 58, 237)"
+        ? "#cbd5e1"
         : provided.backgroundColor,
     color:
       (state.isFocused || state.isSelected) && !state.isMulti
-        ? "white"
-        : "rgb(139, 92, 246)",
+        ? "#0f172a"
+        : "#cbd5e1",
     "&:hover": {
-      backgroundColor: "rgb(139, 92, 246)",
+      backgroundColor: "#1e293b",
       color: "white",
       cursor: "pointer",
     },
     overflow: "hidden",
-    fontSize: "14px",
+    fontSize: "12px",
   }),
   multiValue: (provided: any) => ({
     ...provided,
-    backgroundColor: "white",
-    color: "rgb(124, 58, 237)",
+    backgroundColor: "#1e293b",
+    color: "white",
     borderRadius: "20px",
     padding: "2px 6px",
     marginRight: "5px",
+    fontSize: "12px",
     fontWeight: 600,
     border: "1px solid",
-    borderColor: "rgb(124, 58, 237)",
+    borderColor: "white",
   }),
 
   multiValueLabel: (provided: any) => ({
     ...provided,
-    color: "rgb(124, 58, 237)",
-    backgroundColor: "white",
+    color: "white",
+    fontSize: "10px",
+    fontWeight: 600
   }),
   singleValue: (provided: any) => ({
     ...provided,
-    color: "rgb(124, 58, 237)",
+    color: "#1e293b",
   }),
   menu: (provided: any) => ({
     ...provided,
-    backgroundColor: "white",
+    backgroundColor: "#0f172a",
   }),
   input: (provided: any) => ({
     ...provided,
