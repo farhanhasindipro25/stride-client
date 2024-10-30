@@ -4,6 +4,7 @@ import {
     INPUT_LABEL_STYLES,
 } from "@/_libs/styles/TextInputFieldStyles";
 import cn from "@/_libs/utils/cn";
+import { montserrat } from "@/_libs/utils/font";
 
 export default function TextInputField(props: TextInputFieldProps) {
     const {
@@ -20,11 +21,18 @@ export default function TextInputField(props: TextInputFieldProps) {
         ...otherProps
     } = props;
 
-    const INPUT_FIELD_STYLES = cn(INPUT_BOX_STYLES, className ?? "");
+    const INPUT_FIELD_STYLES = cn(
+        INPUT_BOX_STYLES,
+        montserrat.className,
+        className ?? ""
+    );
     const isRequired = label.includes("*");
     return (
         <div className="flex w-full flex-col gap-1">
-            <label htmlFor={id} className={INPUT_LABEL_STYLES}>
+            <label
+                htmlFor={id}
+                className={cn(INPUT_LABEL_STYLES, montserrat.className)}
+            >
                 {isRequired === false ? (
                     label
                 ) : (
