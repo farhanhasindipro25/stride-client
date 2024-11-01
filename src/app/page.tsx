@@ -6,7 +6,6 @@ export default function Home() {
     return (
         <div className="bg-slate-800/20 h-screen w-full">
             <Navbar />
-            {/* <FiltersSection /> */}
             <PageTop />
             <div className="max-w-9xl mx-auto px-4">
                 <div className="overflow-x-auto">
