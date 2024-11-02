@@ -8,11 +8,13 @@ import {
 } from "@heroicons/react/24/outline";
 import AddTaskModal from "./AddTaskModal";
 import ManageCategoriesModal from "./ManageCategoriesModal";
+import ManageTagsModal from "./ManageTagsModal";
 
 export default function PageTop() {
     const [openAddTaskModal, setOpenAddTaskModal] = useState(false);
     const [openManageCategoriesModal, setOpenManageCategoriesModal] =
         useState(false);
+    const [openManageTagsModal, setOpenManageTagsModal] = useState(false);
     return (
         <div className="max-w-9xl mx-auto pt-4 px-4">
             <div className="flex items-center justify-end gap-4">
@@ -20,6 +22,7 @@ export default function PageTop() {
                     variant="primary"
                     size="small"
                     className="gap-2 font-medium text-xs"
+                    onClick={() => setOpenManageTagsModal(true)}
                 >
                     <DocumentPlusIcon className="w-5 h-5" />
                     Manage Tags
@@ -49,6 +52,10 @@ export default function PageTop() {
                 <ManageCategoriesModal
                     open={openManageCategoriesModal}
                     setOpen={setOpenManageCategoriesModal}
+                />
+                <ManageTagsModal
+                    open={openManageTagsModal}
+                    setOpen={setOpenManageTagsModal}
                 />
             </div>
         </div>
