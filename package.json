@@ -21,6 +21,7 @@
     "react-dom": "19.0.0-rc-65a56d0e-20241020",
     "react-hot-toast": "^2.4.1",
     "react-select": "^5.8.2",
+    "react-textarea-autosize": "^8.5.4",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
