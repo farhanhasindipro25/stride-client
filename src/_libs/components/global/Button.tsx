@@ -3,6 +3,7 @@ import {
     DEFAULT_BUTTON_STYLES,
     MEDIUM_BUTTON_STYLES,
     PRIMARY_BUTTON_STYLES,
+    SECONDARY_BUTTON_STYLES,
     SMALL_BUTTON_STYLES,
 } from "@/_libs/styles/ButtonStyles";
 import cn from "@/_libs/utils/cn";
@@ -14,6 +15,7 @@ const BUTTON_VARIANTS = cva(DEFAULT_BUTTON_STYLES, {
     variants: {
         variant: {
             primary: PRIMARY_BUTTON_STYLES,
+            secondary: SECONDARY_BUTTON_STYLES,
         },
         size: {
             medium: MEDIUM_BUTTON_STYLES,

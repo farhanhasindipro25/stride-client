@@ -5,3 +5,6 @@ export const SMALL_BUTTON_STYLES = "px-3 py-2 text-sm font-semibold"
 
 export const PRIMARY_BUTTON_STYLES =
   "bg-slate-600/30 text-neutral-50 hover:bg-slate-500/30 active:bg-slate-500/30 focus:bg-slate-500/30 focus:ring-slate-300/30 active:ring-slate-300/30"
+
+  export const SECONDARY_BUTTON_STYLES =
+  "bg-slate-100/5 text-neutral-50 hover:bg-slate-50/10 active:bg-slate-50/10 focus:bg-slate-50/10 focus:ring-slate-300/10 active:ring-slate-300/10"

@@ -4,6 +4,8 @@ import {
     customStyles,
     SELECT_LABEL_STYLES,
 } from "@/_libs/styles/SelectFieldStyles";
+import cn from "@/_libs/utils/cn";
+import { montserrat } from "@/_libs/utils/font";
 import Select from "react-select";
 
 export default function SelectField(props: SelectFieldProps) {
@@ -31,7 +33,10 @@ export default function SelectField(props: SelectFieldProps) {
                 e.stopPropagation();
             }}
         >
-            <label htmlFor={id} className={SELECT_LABEL_STYLES}>
+            <label
+                htmlFor={id}
+                className={cn(SELECT_LABEL_STYLES, montserrat.className)}
+            >
                 {isRequired === false ? (
                     label
                 ) : (

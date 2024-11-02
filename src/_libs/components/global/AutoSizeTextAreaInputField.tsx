@@ -22,7 +22,7 @@ export default function AutoSizeTextAreaField(
         defaultValue,
         className,
         minRows = 2,
-        maxRows = 5,
+        maxRows = 100,
         onChange,
         onBlur,
         ...otherProps
@@ -37,7 +37,10 @@ export default function AutoSizeTextAreaField(
     const isRequired = label.includes("*");
     return (
         <div className="flex flex-col gap-1">
-            <label htmlFor={id} className={TEXTAREA_LABEL_STYLES}>
+            <label
+                htmlFor={id}
+                className={cn(TEXTAREA_LABEL_STYLES, montserrat.className)}
+            >
                 {isRequired === false ? (
                     label
                 ) : (

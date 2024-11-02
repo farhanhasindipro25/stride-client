@@ -19,7 +19,7 @@ const Modal = (props: ModalProps) => {
                     leaveFrom="opacity-50"
                     leaveTo="opacity-0"
                 >
-                    <div className="fixed inset-0 bg-black bg-opacity-90 transition-opacity ease-in-out duration-0" />
+                    <div className="fixed inset-0 bg-black bg-opacity-95 transition-opacity ease-in-out duration-0" />
                 </Transition.Child>
 
                 <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -36,7 +36,7 @@ const Modal = (props: ModalProps) => {
                             <Dialog.Panel
                                 className={cn(
                                     modalStyles,
-                                    "bg-slate-800/25 bg-opacity-100 shadow-xl"
+                                    "bg-slate-800/20 bg-opacity-100 shadow-xl"
                                 )}
                             >
                                 {children}
