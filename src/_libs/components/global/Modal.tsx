@@ -14,9 +14,9 @@ const Modal = (props: ModalProps) => {
                     as={Fragment}
                     enter="ease-in-out duration-300"
                     enterFrom="opacity-0"
-                    enterTo="opacity-50"
+                    enterTo="opacity-95"
                     leave="ease-in-out duration-200"
-                    leaveFrom="opacity-50"
+                    leaveFrom="opacity-95"
                     leaveTo="opacity-0"
                 >
                     <div className="fixed inset-0 bg-black bg-opacity-95 transition-opacity ease-in-out duration-0" />
