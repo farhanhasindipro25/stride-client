@@ -1,4 +1,4 @@
 export const TEXTAREA_LABEL_STYLES =
-  "block text-sm font-medium text-neutral-700"
+  "block text-xs font-medium text-gray-50"
 export const TEXTAREA_BOX_STYLES =
-  "resize-none pl-3 pr-8 py-2 block w-full appearance-none rounded-md border border-neutral-300 placeholder-gray-500 shadow-sm text-sm font-normal focus:border-primary-500 focus:outline-none focus:ring-primary-500"
+  "resize-none pl-3 pr-8 py-2 block w-full appearance-none bg-slate-800/15 rounded-md text-gray-400 border border-slate-800/5 placeholder-gray-400 shadow-sm text-sm font-normal focus:border-slate-800/5 focus:outline-none focus:ring-slate-800/5"

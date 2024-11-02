@@ -4,6 +4,7 @@ import cn from "@/_libs/utils/cn";
 import { montserrat } from "@/_libs/utils/font";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import TextInputField from "../../global/TextInputField";
+import AutoSizeTextAreaField from "../../global/AutoSizeTextAreaInputField";
 
 export default function AddTaskModal({ open, setOpen }: any) {
     return (
@@ -24,12 +25,19 @@ export default function AddTaskModal({ open, setOpen }: any) {
                     </h2>
                     <XMarkIcon className="w-5 h-5 font-bold" />
                 </div>
-                <div className="pt-4">
+                <div className="pt-4 space-y-4">
                     <TextInputField
                         name="title"
                         id="title"
                         label="Title"
                         placeholder="Name your task"
+                    />
+                    <AutoSizeTextAreaField
+                        name="description"
+                        id="description"
+                        label="Description"
+                        placeholder="Describe your task . . ."
+                        minRows={5}
                     />
                 </div>
             </div>

@@ -5,6 +5,7 @@ import {
     TEXTAREA_LABEL_STYLES,
 } from "@/_libs/styles/AutoSizeTextAreaStyles";
 import cn from "@/_libs/utils/cn";
+import { montserrat } from "@/_libs/utils/font";
 import React from "react";
 
 import ReactTextareaAutosize from "react-textarea-autosize";
@@ -27,7 +28,11 @@ export default function AutoSizeTextAreaField(
         ...otherProps
     } = props;
 
-    const TEXTAREA_FIELD_STYLES = cn(TEXTAREA_BOX_STYLES, className ?? "");
+    const TEXTAREA_FIELD_STYLES = cn(
+        TEXTAREA_BOX_STYLES,
+        montserrat.className,
+        className ?? ""
+    );
 
     const isRequired = label.includes("*");
     return (
