@@ -7,9 +7,12 @@ import {
     SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 import AddTaskModal from "./AddTaskModal";
+import ManageCategoriesModal from "./ManageCategoriesModal";
 
 export default function PageTop() {
     const [openAddTaskModal, setOpenAddTaskModal] = useState(false);
+    const [openManageCategoriesModal, setOpenManageCategoriesModal] =
+        useState(false);
     return (
         <div className="max-w-9xl mx-auto pt-4 px-4">
             <div className="flex items-center justify-end gap-4">
@@ -25,6 +28,7 @@ export default function PageTop() {
                     variant="primary"
                     size="small"
                     className="gap-2 font-medium text-xs"
+                    onClick={() => setOpenManageCategoriesModal(true)}
                 >
                     <SquaresPlusIcon className="w-5 h-5" />
                     Manage Categories
@@ -41,6 +45,10 @@ export default function PageTop() {
                 <AddTaskModal
                     open={openAddTaskModal}
                     setOpen={setOpenAddTaskModal}
+                />
+                <ManageCategoriesModal
+                    open={openManageCategoriesModal}
+                    setOpen={setOpenManageCategoriesModal}
                 />
             </div>
         </div>
