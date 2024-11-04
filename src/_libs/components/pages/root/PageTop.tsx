@@ -43,7 +43,7 @@ export default function PageTop() {
                     onClick={() => setOpenAddTaskModal(true)}
                 >
                     <PlusIcon className="w-5 h-5" />
-                    Add Task
+                    Add Tasks
                 </Button>
                 <AddTaskModal
                     open={openAddTaskModal}
